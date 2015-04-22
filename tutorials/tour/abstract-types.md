@@ -7,7 +7,7 @@ disqus: true
 tutorial: scala-tour
 num: 2
 outof: 35
-languages: [es, ko]
+languages: [es, ja, ko]
 tutorial-next: annotations
 tutorial-previous: tour-of-scala
 ---
