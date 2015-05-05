@@ -27,8 +27,7 @@ Scala のクラスは実行時、様々なオブジェクトにインスタン�
 
 Scala のクラスはコンストラクタ引数によって特徴付けされます。 上のコードでは2つのコンストラクタ引数 `xc`、`yc` を定義しています。 2つのパラメータともにクラス内のどこからでも参照できます。 上の例では変数 `x` と `y` を初期化するのに使われています。
 
-クラスは下の例のように、新しいプリミティブな値でインスタンス化されます。:
-Classes are instantiated with the new primitive, as the following example will show:
+クラスは下の例のように、 `new` プリミティブでインスタンス化されます。:
 
     object Classes {
       def main(args: Array[String]) {
