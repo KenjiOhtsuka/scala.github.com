@@ -11,7 +11,6 @@ tutorial-previous: case-classes
 ---
 
 時に、オブジェクトが他の複数の型のサブタイプであることの表現が必要になります。 Scala ではオブジェクト型の論理積である *複合型* を使って表現することができます。
-Sometimes it is necessary to express that the type of an object is a subtype of several other types. In Scala this can be expressed with the help of *compound types*, which are intersections of object types.
 
 2つのトレイト `Cloneable` と `Resetable` があるとします。:
 
@@ -25,7 +24,6 @@ Sometimes it is necessary to express that the type of an object is a subtype of 
     }
 
 ここで、オブジェクトを引数にとり、元のオブジェクトをリセットする `cloneAndReset` 関数の定義をしてみます。:
-Now suppose we want to write a function `cloneAndReset` which takes an object, clones it and resets the original object:
 
     def cloneAndReset(obj: ?): Cloneable = {
       val cloned = obj.clone()

@@ -11,7 +11,6 @@ tutorial-next: compound-types
 ---
 
 Scala は _ケース クラス_ の表記をサポートしています。 ケースクラスはコンストラクタ引数をエクスポートし、[パターンマッチング](pattern-matching.html)を通して再帰的な分解メカニズムを提供する標準的なクラスです。
-Scala supports the notion of _case classes_. Case classes are regular classes which export their constructor parameters and which provide a recursive decomposition mechanism via [pattern matching](pattern-matching.html).
 
 下は抽象クラスのスーパークラス `Term` と3つの具象クラス `Var`、`Fun`、`App` からなるクラス階層の例です。
 
@@ -27,13 +26,11 @@ Scala supports the notion of _case classes_. Case classes are regular classes wh
     Fun("x", Fun("y", App(Var("x"), Var("y"))))
 
 ケースクラスのコンストラクタ引数はパブリックな値として扱われ、直接アクセスすることができます。
-The constructor parameters of case classes are treated as public values and can be accessed directly.
 
     val x = Var("x")
     println(x.name)
 
 すべてのケースクラスについて、 Scala のコンパイラは構造的透過性を `equals` メソッドと `toString` メソッドを生成します。 たとえば:
-For every case class the Scala compiler generates an `equals` method which implements structural equality and a `toString` method. For instance:
 
     val x1 = Var("x")
     val x2 = Var("x")
